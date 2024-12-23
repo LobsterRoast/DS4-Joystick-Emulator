@@ -12,4 +12,5 @@ Simply activate the venv for the script and then, in the root directory, run:
 ```bash
 python3 main.py
 ```
+The emulator locks your cursor into position to prevent it from reaching the edge of the screen, so you'll need to use Alt+Tab or toggle the emulator to switch to your desired window.
 To exit the emulator, press CTRL+Q. You can also use CTRL+T to toggle the emulator function without closing it entirely.
