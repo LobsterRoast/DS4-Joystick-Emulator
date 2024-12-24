@@ -6,7 +6,7 @@ This was created pretty much exclusively to combat the fact that ShadPS4 does no
 
 I currently don't have plans to expand this to support other bindings or to add a gui or anything. If you want to tweak the values, head on into the Python script and you should hopefully have an easy enough time tweaking it to your liking. I'd also like to suggest AutoHotkey for binding other keys, ShadPS4 has keyboard bindings for every DualShock input even if they're not intuitive. The result of that though is that AutoHotkey works fine.
 ## Requirements
-I've had some issues when trying to use this without a patch for my monitor's native resolution. If yours isn't supported by default, try (this mod.)[https://www.nexusmods.com/bloodborne/mods/79?tab=description]
+I've had some issues when trying to use this without a patch for my monitor's native resolution. If yours isn't supported by default, try [this mod.](https://www.nexusmods.com/bloodborne/mods/79?tab=description)
 ## Installation
 
 Simply activate the venv for the script and then, in the root directory, run:
