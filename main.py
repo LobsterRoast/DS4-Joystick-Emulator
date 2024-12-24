@@ -32,8 +32,8 @@ while True:
 		# Mouse has to be reset to center of the screen to stop it from reaching the edge
 		mouse.position = center_x, center_y
 		dx_buf, dy_buf = current_x - center_x, current_y - center_y
-		dx = dx * 0.9 + center_x if dx_buf == 0 else dx_buf + center_x
-		dy = dy * 0.9 + center_y if dy_buf == 0 else dy_buf + center_y
+		dx = dx * 0.2 + center_x if dx_buf == 0 else dx_buf + center_x
+		dy = dy * 0.2 + center_y if dy_buf == 0 else dy_buf + center_y
 		# Library measures from the center of the screen, so we add center_x/y here and also multiply by sensitivity
 		transformed_x, transformed_y = dx * x_sensitivity + center_x, dy * y_sensitivity + center_y
 		# Find the sign by which the deadzones will be multiplied
@@ -50,4 +50,4 @@ while True:
 		active = not active
 		time.sleep(0.2)
 	# Best if the sleep delay is untouched. Higher or lower values may feel exceedingly janky (note that this was tested at 60fps) 
-	time.sleep(0.00166)
+	time.sleep(0.002)
