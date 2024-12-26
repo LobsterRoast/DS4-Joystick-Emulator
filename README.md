@@ -18,7 +18,7 @@ I currently don't have plans to expand this to support other bindings or to add 
 
 1. Download the latest release from the [releases page](https://github.com/LobsterRoast/DS4-Joystick-Emulator/releases/tag/v1.0.1) and extract the file wherever you please.
 2. Open the folder you just extracted and run `run.ps1`. This should open a new PowerShell window with the script running.
-3. Open bloodborne and start playing!
+3. Open your game and start playing!
 
 ---
 
