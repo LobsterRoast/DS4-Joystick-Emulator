@@ -6,18 +6,27 @@ from screeninfo import get_monitors
 from pynput.mouse import Controller
 
 print("Joystick Emulator Activated.\nPress 'ctrl + q' to exit.\nPress 'ctrl + t' to toggle the emulator.")
+
 # Initialize library modules
 mouse = Controller()
 gamepad = vg.VDS4Gamepad()
 screen = get_monitors()[0]
+
+# you can change this, but I would not recommend this.
 screen_width = screen.width
 screen_height = screen.height
+
 # deadzones dont feel so great on mouse and keyboard, so this is used to implement logic that gets around ShadPS4's deadzones
 deadzone_fac = 0.03
+
 # Set the deadzones for x and y so they can be used later
 dz_x, dz_y = int(round(deadzone_fac*screen_width)), int(round(deadzone_fac*screen_height))
+
+# Mouse Sensitivity
 x_sensitivity = 20
 y_sensitivity = 20
+
+# Changing this will result in undefined behaviour
 center_x, center_y = screen_width/2, screen_height/2
 active = True
 
