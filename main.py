@@ -60,4 +60,3 @@ while True:
 		time.sleep(0.2)
 	# Best if the sleep delay is untouched. Higher or lower values may feel exceedingly janky (note that this was tested at 60fps) 
 	time.sleep(0.004)
-
