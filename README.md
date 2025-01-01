@@ -1,4 +1,6 @@
 # DualShock 4 Joystick Emulator
+DS4-Joystick-Emulator is a simple Python script for Windows that uses yannbouteiller's vgamepad module to emulate the right joystick of a DualShock controller.
+
 `DS4-joystickEmulator` is a simple Python script for Windows that uses yannbouteiller's [vgamepad module](https://github.com/yannbouteiller/vgamepad) to emulate the right joystick of a DualShock controller.
 
 This was created pretty much exclusively to combat the fact that [ShadPS4](https://github.com/shadps4-emu/shadps4) does not yet support mouse inputs at the time I'm writing this. The left joystick isn't much of a problem since it's bound to WASD by default, but the default bindings for the right joystick are impractical for most games.
