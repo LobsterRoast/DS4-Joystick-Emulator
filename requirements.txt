@@ -1,0 +1,4 @@
+vgamepad==0.1.0
+keyboard==0.13.5
+screeninfo==0.8.1
+pynput==1.7.7
