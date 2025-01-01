@@ -12,7 +12,7 @@ I currently don't have plans to expand this to support other bindings or to add 
 1. Download the latest release from the [releases page](https://github.com/LobsterRoast/DS4-Joystick-Emulator/releases/tag/v1.0.1) and extract the file wherever you please.
 2. Open the folder you just extracted and then open it in the terminal.
 3. Run the following commands:
-```ps
+```bat
 pip install -r requirements.txt # This will install Python dependencies
 python3 main.py                 # This will run the actual program
 ```
