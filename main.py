@@ -17,10 +17,7 @@ screen_width = screen.width
 screen_height = screen.height
 
 # deadzones dont feel so great on mouse and keyboard, so this is used to implement logic that gets around ShadPS4's deadzones
-deadzone_fac = 0.03
-
-# Set the deadzones for x and y so they can be used later
-dz_x, dz_y = int(round(deadzone_fac*screen_width)), int(round(deadzone_fac*screen_height))
+deadzones = 35
 
 # Mouse Sensitivity
 x_sensitivity = 20
@@ -50,9 +47,9 @@ while True:
 		dz_mult_y = 0 if dx == 0 else math.copysign(1, dy)
 		# Technically this method for cancelling out the deadzones is an overcorrection since it doesn't take into account that the deadzones are circular rather than square
 		# That being said, I beat the entire game like this and the effects weren't noticable. Feel free to make a PR request to fix it but I'm too lazy right now lmao
-		joystick_x = int(clamp(round(transformed_x*255/screen_width, 0)+dz_x*dz_mult_x, 0, 255))
+		joystick_x = int(clamp(round(transformed_x*255/screen_width, 0)+deadzones*dz_mult_x, 0, 255))
 		# library documentation said the values should be between 0 and 255, but 0 didn't work for the y-axis, so it's clamped to bottom out at 1
-		joystick_y = int(clamp(round(transformed_y*255/screen_height, 0)+dz_y*dz_mult_y, 1, 255))
+		joystick_y = int(clamp(round(transformed_y*255/screen_height, 0)+deadzones*dz_mult_y, 1, 255))
 		gamepad.right_joystick(x_value=joystick_x, y_value=joystick_y)
 		gamepad.update()
 	if (keyboard.is_pressed('ctrl') and keyboard.is_pressed('q')):
